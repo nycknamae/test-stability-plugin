@@ -12,15 +12,6 @@
   <version>2.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/Test+stability+plugin</url>
-  
-  <developers>
-  	<developer>
-  		<id>kutzi</id>
-  		<name>Christoph Kutzinski</name>
-  		<email>christoph.kutzinsk@esailors.de</email>
-  		<timezone>-1</timezone>
-  	</developer>
-  </developers>
 
   <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
   <repositories>
@@ -52,7 +43,13 @@
           <groupId>org.jenkins-ci.plugins</groupId>
           <artifactId>junit</artifactId>
           <scope>compile</scope>
-          <version>1.6</version>
+          <version>1.9</version>
+      </dependency>
+      <dependency>
+          <groupId>org.jenkins-ci.plugins</groupId>
+          <artifactId>testng-plugin</artifactId>
+          <scope>compile</scope>
+          <version>1.9</version>
       </dependency>
   </dependencies>
   
@@ -100,8 +97,8 @@
   </build>
   
   <scm>
-    <connection>scm:git:ssh://github.com/jenkinsci/test-stability-plugin.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/jenkinsci/test-stability-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/test-stability-plugin</url>
+    <connection>scm:git:ssh://github.com/nycknamae/test-stability-plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/nycknamae/test-stability-plugin.git</developerConnection>
+    <url>https://github.com/nycknamae/test-stability-plugin</url>
   </scm>
 </project>
